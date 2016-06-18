@@ -1,8 +1,24 @@
-body {font-family: arial;}
+body {font-family: arial;
+	text-align: center;
+}
 
-h1 {background-color:#CCC; border: 1px solid; color:#39F; text-align: center;}
+h1 {background-color:#CCC; 
+	border: 1em solid; 
+	color:#39F; 
+	text-align: center;
+}
 
 p {
     color:#09F;
-    text-indent: 20px;
+    text-indent: 1em;
+}
+
+input{
+	width: auto;
+    text-align:center;
+}
+
+.buttons input[type=submit]{
+  text-align: center;
+  width: 55px;
 }
