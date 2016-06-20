@@ -4,16 +4,38 @@
     <link rel="stylesheet" href="guessinggame.css">
     <meta charset="utf-8">
     <title>FSA Guessing Game</title>
+  
   </head>
   <body>
     <h1>Guessing Game</h1>
     <p>Please select a number between 1-100!</p>
-    <input type="text" name="guess" value="Guess!">
+    <input class ='input' type="text" name="guess">
     <br><br>
       
-      <div class="buttons">
-        <input type="submit" value="Submit">
-        <input type="submit" value="Hint">
-      </div>  
+
+      <div id="buttons">
+        <input class='submitguess' type="button" value="Submit">
+        <input class='Hint' type="button" value="Hint">
+      </div>
+      <div>
+        <input class='Replay hidden' type="button" value="Replay">
+      </div>
+    
+    <br> 
+
+    <div class="results hidden">
+      <p>Your Guess is:</p>
+      <p class='answer'> 0 </p>
+      <p class='guessStatus'>4 guesses remaining.</p>
+      <p class='hintStatus'>hint</p>
+    </div>  
+    <div>
+      <p class="numberguessed hidden" >Wrong</p>
+    </div>  
+
+
+
+    <script src="jquery-3.0.0.js"></script>
+    <script src="guessinggame.js"></script>
   </body>
 </html>

@@ -13,12 +13,51 @@ p {
     text-indent: 1em;
 }
 
-input{
+.input{
 	width: auto;
-    text-align:center;
+  text-align:center;
 }
 
-.buttons input[type=submit]{
+#buttons input[type=button]{
   text-align: center;
-  width: 55px;
+  width: 80px;
 }
+
+.results {
+  font-size: 150%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+.numberguessed {
+  color: red;
+  border: 1px solid;
+  font-size: 200%; 
+}
+
+.hidden{
+  visibility:hidden;
+}
+
+.congrats{
+  color: green;
+  font-size 200px;
+  background: #000;
+  -webkit-animation: flash linear 1s infinite;
+  animation: flash linear 1s infinite;
+
+}
+
+@-webkit-keyframes flash {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+@keyframes flash {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+
+
