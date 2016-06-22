@@ -104,7 +104,6 @@ function provideHint(){
 
 function playAgain(){
 	winningNumber = generateWinningNumber();
-	alert(winningNumber);
 	guessesMade = [];
 	$('.results').addClass('hidden');
 	$('.Replay').addClass('hidden');
@@ -117,8 +116,6 @@ function playAgain(){
 
 /* **** Event Listeners/Handlers ****  */
 winningNumber = generateWinningNumber();
-
-
 
 $('.submitguess').on('click', function(){
 	$('.results').removeClass("hidden");
