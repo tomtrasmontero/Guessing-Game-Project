@@ -117,7 +117,7 @@ function playAgain(){
 
 /* **** Event Listeners/Handlers ****  */
 winningNumber = generateWinningNumber();
-alert(winningNumber);
+
 
 
 $('.submitguess').on('click', function(){
